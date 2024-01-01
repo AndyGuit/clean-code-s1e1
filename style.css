@@ -145,32 +145,32 @@ button{
   width: 226px;
 }
 
-.delete img {
+.task-item__delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.task-item__delete-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+.task-list_completed .task-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task-item__input {
   display: none;
 }
 
-ul .editMode input[type=text] {
+.task-item.editMode .task-item__input {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+.task-item.editMode .task-item__label {
   display: none;
 }
